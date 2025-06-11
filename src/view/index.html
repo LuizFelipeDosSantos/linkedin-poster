@@ -8,16 +8,27 @@
 </head>
 <body>
   <div id="root">
+
     <div id="search">
       <input type="text" id="topic" placeholder="Topic">
       <button id="generate">Generate Post</button>
     </div>
-    <div id="post">
-      <img id="profile-pic" src="" alt="">
-      <p id="profile-name">Luiz Felipe dos Santos</p>
-      <p id="profile-role">Software Engineer</p>
-      <p id="generated-post"></p>
+
+    <div id="post-card">
+      <div id="post-header">
+        <img src="https://placehold.co/50x50/F0F2F5/666666?text=FP" alt="Profile Pic" id="profile-pic">
+
+        <div id="profile-info">
+          <p id="profile-name">Luiz Felipe dos Santos</p>
+          <p id="profile-role">Software Engineer</p>
+        </div>
+      </div>
+
+        <div id="card-content">
+          <p id="generated-post"></p>
+        </div>
     </div>
+
   </div>
 
   <script src="../main.js"></script>

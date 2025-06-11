@@ -1,11 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: lightgray;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f2ee;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 #root {
@@ -23,12 +25,12 @@ body {
   justify-content: center;
 
   padding: 1em;
-  height: 5em;
+  height: 4em;
 }
 
 #topic {
   background-color: white;
-  width: 30em;
+  width: 35em;
   font-size: 1em;
   border-radius: 0.5em;
   padding: 0.3em;
@@ -38,30 +40,51 @@ body {
 #generate {
   background-color: #0966C2;
   color: white;
-  width: 8em;
+  width: 10em;
   font-size: 1em;
   border-radius: 0.5em;
   margin: 0.3em;
 }
 
-#post {
-  background-color: white;
-  border-radius: 0.5em;
-  margin: 1em 15em 5em 15em;
-  padding: 1em;
+#post-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /*max-width: 550px;*/
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+#post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 #profile-pic {
-  height: 10em;
-  border: solid;
-  border-radius: 1em;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 1px solid #e0e0e0;
+}
+
+#profile-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 #profile-name {
   font-size: 1.2em;
   font-weight: bold;
+  margin: 0.2em;
 }
 
 #profile-role {
   font-size: 0.8em;
+  margin: 0.3em;
 }
